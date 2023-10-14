@@ -1,5 +1,6 @@
 import Script from "next/script";
 import styles from "./page.module.css";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -117,9 +118,9 @@ export default function Home() {
             <div className="row">
               <div className="col-lg-7">
                 <div className="banner_content">
-                  <h3 className="text-uppercase">Hell0</h3>
-                  <h1 className="text-uppercase">I am rahi satner</h1>
-                  <h5 className="text-uppercase">senior wordpress developer</h5>
+                  <h3 className="text-uppercase">Hallo</h3>
+                  <h1 className="text-uppercase">Ich bin anderas</h1>
+                  <h5 className="text-uppercase">web developer</h5>
                   <div className="d-flex align-items-center">
                     <a className="primary_btn" href="#">
                       <span>Hire Me</span>
@@ -154,23 +155,25 @@ export default function Home() {
             <div className="offset-lg-1 col-lg-5">
               <div className="main_title text-left">
                 <h2>
-                  let’s <br />
-                  Introduce about <br />
-                  myself
+                  Über mich
+                  <br />
                 </h2>
-                <p>
-                  Whose given. Were gathered. There first subdue greater. Bearing you Whales heaven
-                  midst their. Beast creepeth. Fish days.
+                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                  Ich bin Andreas, ein Fullstack-Entwickler aus Österreich. Meine Expertise liegt in
+                  der Entwicklung von Websites, Webapps und Mobile-Apps. Derzeit arbeite ich als
+                  externer Freelancer für ein renommiertes Unternehmen in Österreich. Zusätzlich
+                  unterstütze ich kleine und mittlere Unternehmen sowie Privatpersonen in ihrer
+                  Vision, digitale Produkte zu erschaffen und umzusetzen.
                 </p>
-                <p>
-                  Is give may shall likeness made yielding spirit a itself together created after
-                  sea is in beast beginning signs open god you&apos;re gathering whose gathered
-                  cattle let. Creature whales fruit unto meat the life beginning all in under give
-                  two.
+                <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+                  Für mich steht eine angenehme und unkomplizierte Zusammenarbeit sowie persönlicher
+                  Austausch an erster Stelle. Dadurch bin ich in der Lage, optimal auf deine Wünsche
+                  einzugehen. Wenn du einen erfahrenen Entwickler suchst, der mit Leidenschaft und
+                  Engagement bei der Sache ist, zögere nicht, mich zu kontaktieren.
                 </p>
-                <a className="primary_btn" href="#">
+                {/* <a className="primary_btn" href="#">
                   <span>Download CV</span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
@@ -187,56 +190,56 @@ export default function Home() {
                 <div className="col-lg-4 col-md-4 col-sm-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
-                      <img src="img/brands/logo1.png" alt="" />
+                      <img src="img/skills/react.png" alt="" />
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
-                      <img src="img/brands/logo2.png" alt="" />
+                      <img src="img/skills/vuejs.png" alt="" />
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
-                      <img src="img/brands/logo3.png" alt="" />
+                      <img src="img/skills/angular.png" alt="" />
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
-                      <img src="img/brands/logo4.png" alt="" />
+                      <img src="img/skills/flutter.png" alt="" />
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
-                      <img src="img/brands/logo5.png" alt="" />
+                      <img src="img/skills/django.png" alt="" />
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
-                      <img src="img/brands/logo6.png" alt="" />
+                      <img src="img/skills/docker.png" alt="" />
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
-                      <img src="img/brands/logo7.png" alt="" />
+                      <img src="img/skills/ionic.png" alt="" />
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-4 col-md-4 col-sm-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
-                      <img src="img/brands/logo8.png" alt="" />
+                      <img src="img/skills/python.png" alt="" />
                     </div>
                   </div>
                 </div>
@@ -252,16 +255,16 @@ export default function Home() {
             <div className="offset-lg-2 col-lg-4 col-md-6">
               <div className="client-info">
                 <div className="d-flex mb-50">
-                  <span className="lage">10</span>
-                  <span className="smll">Years Experience Working</span>
+                  <span className="lage">x7</span>
+                  <span className="smll">Jahre Branchen Erfahrung</span>
                 </div>
                 <div className="call-now d-flex">
                   <div>
                     <span className="fa fa-phone"></span>
                   </div>
                   <div className="ml-15">
-                    <p>call us now</p>
-                    <h3>(+1)-800-555-6789</h3>
+                    <p>Telefon</p>
+                    <h3>(+43)-676-945-7566</h3>
                   </div>
                 </div>
               </div>
@@ -277,10 +280,13 @@ export default function Home() {
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center">
               <div className="main_title">
-                <h2>service offers </h2>
+                <h2>Service Angebot </h2>
                 <p>
-                  Is give may shall likeness made yielding spirit a itself togeth created after sea{" "}
-                  <br /> is in beast beginning signs open god you&apos;re gathering ithe
+                  Mit meiner Erfahrung im Grafikdesign und SEO kann ich dir helfen, dein Produkt von
+                  Anfang bis Ende zu gestalten und zu optimieren. Das beinhaltet sowohl das Design
+                  der Benutzeroberfläche (UX/UI) als auch die eigentliche Entwicklung, abgerundet
+                  mit SEO-Optimierungen, damit dein Produkt nicht nur gut aussieht, sondern auch
+                  leicht im Internet gefunden werden kann.
                 </p>
               </div>
             </div>
@@ -288,41 +294,32 @@ export default function Home() {
           <div className="row feature_inner">
             <div className="col-lg-3 col-md-6">
               <div className="feature_item">
-                <img src="img/services/s1.png" alt="" />
-                <h4>Wp developing</h4>
-                <p>
-                  Creeping for female light years that lesser can&apos;t evening heaven isn&apos;t
-                  bearing tree
-                </p>
+                <img src="img/services/s2.png" alt="" />
+                <h4>UI/ux design</h4>
+                <p>Gestaltung von coolen und benuterfreundlichen Frontend User Interfaces.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="feature_item">
-                <img src="img/services/s2.png" alt="" />
-                <h4>UI/ux design</h4>
-                <p>
-                  Creeping for female light years that lesser can&apos;t evening heaven isn&apos;t
-                  bearing tree
-                </p>
+                <img src="img/services/s1.png" alt="" />
+                <h4>Web Design</h4>
+                <p>Design und Entwicklung von state-of-the-art Websites und Web-Apps.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="feature_item">
                 <img src="img/services/s3.png" alt="" />
-                <h4>Web design</h4>
-                <p>
-                  Creeping for female light years that lesser can&apos;t evening heaven isn&apos;t
-                  bearing tree
-                </p>
+                <h4>Mobile Apps</h4>
+                <p>Gestaltung und Entwicklung ansprechender Apps für iOS und Android.</p>
               </div>
             </div>
             <div className="col-lg-3 col-md-6">
               <div className="feature_item">
                 <img src="img/services/s4.png" alt="" />
-                <h4>seo optimize</h4>
+                <h4>SEO Optimierung</h4>
                 <p>
-                  Creeping for female light years that lesser can&apos;t evening heaven isn&apos;t
-                  bearing tree
+                  Google Optimierungen für eine verbesserte Auffindbarkeit in der großen digitalen
+                  Welt.
                 </p>
               </div>
             </div>
