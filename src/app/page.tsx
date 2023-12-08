@@ -5,112 +5,6 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      {/* <!--================ Start Header Area =================--> */}
-      <header className="header_area">
-        <div className="main_menu">
-          <nav className="navbar navbar-expand-lg navbar-light">
-            <div className="container">
-              {/* <!-- Brand and toggle get grouped for better mobile display --> */}
-              <a className="navbar-brand logo_h" href="index.html">
-                <img src="img/logo.png" alt="" />
-              </a>
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-                <span className="icon-bar"></span>
-              </button>
-              {/* <!-- Collect the nav links, forms, and other content for toggling --> */}
-              <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
-                <ul className="nav navbar-nav menu_nav justify-content-end">
-                  <li className="nav-item active">
-                    <a className="nav-link" href="index.html">
-                      Home
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="about.html">
-                      About
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="services.html">
-                      Services
-                    </a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="portfolio.html">
-                      Portfolio
-                    </a>
-                  </li>
-                  <li className="nav-item submenu dropdown">
-                    <a
-                      href="#"
-                      className="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Pages
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <a className="nav-link" href="elements.html">
-                          Elements
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="portfolio-details.html">
-                          Portfolio Details
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="nav-item submenu dropdown">
-                    <a
-                      href="#"
-                      className="nav-link dropdown-toggle"
-                      data-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
-                    >
-                      Blog
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <a className="nav-link" href="blog.html">
-                          Blog
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a className="nav-link" href="single-blog.html">
-                          Blog Details
-                        </a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link" href="contact.html">
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </div>
-      </header>
-      {/* <!--================ End Header Area =================--> */}
-
       {/* <!--================ Start Home Banner Area =================--> */}
       <section className="home_banner_area">
         <div className="banner_inner">
@@ -141,7 +35,6 @@ export default function Home() {
         </div>
       </section>
       {/* <!--================ End Home Banner Area =================--> */}
-
       {/* <!--================ Start About Us Area =================--> */}
       <section className="about_area section_gap">
         <div className="container">
@@ -180,70 +73,69 @@ export default function Home() {
         </div>
       </section>
       {/* <!--================ End About Us Area =================--> */}
-
       {/* <!--================ Srart Brand Area =================--> */}
       <section className="brand_area section_gap_bottom">
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="row">
-                <div className="col-lg-4 col-md-4 col-sm-6">
+                <div className="col-lg-4 col-md-4 col-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
                       <img src="img/skills/react.png" alt="" />
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-6">
+                <div className="col-lg-4 col-md-4 col-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
                       <img src="img/skills/vuejs.png" alt="" />
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-6">
+                <div className="col-lg-4 col-md-4 col-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
                       <img src="img/skills/angular.png" alt="" />
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-6">
+                <div className="col-lg-4 col-md-4 col-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
                       <img src="img/skills/flutter.png" alt="" />
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-6">
+                <div className="col-lg-4 col-md-4 col-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
                       <img src="img/skills/django.png" alt="" />
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-6">
+                <div className="col-lg-4 col-md-4 col-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
                       <img src="img/skills/docker.png" alt="" />
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-6">
+                <div className="col-lg-4 col-md-4 col-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
                       <img src="img/skills/ionic.png" alt="" />
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-6">
+                <div className="col-lg-4 col-md-4 col-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
                       <img src="img/skills/python.png" alt="" />
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-4 col-md-4 col-sm-6">
+                <div className="col-lg-4 col-md-4 col-6">
                   <div className="single-brand-item d-table">
                     <div className="d-table-cell text-center">
                       <img src="img/brands/logo9.png" alt="" />
@@ -252,7 +144,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="offset-lg-2 col-lg-4 col-md-6">
+            <div className="offset-lg-2 col-lg-4 col-6">
               <div className="client-info">
                 <div className="d-flex mb-50">
                   <span className="lage">x7</span>
@@ -273,7 +165,6 @@ export default function Home() {
         </div>
       </section>
       {/* <!--================ End Brand Area =================--> */}
-
       {/* <!--================ Start Features Area =================--> */}
       <section className="features_area">
         <div className="container">
@@ -327,21 +218,17 @@ export default function Home() {
         </div>
       </section>
       {/* <!--================ End Features Area =================--> */}
-
       {/* <!--================Start Portfolio Area =================--> */}
       <section className="portfolio_area" id="portfolio">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="main_title text-left">
-                <h2>
-                  quality work <br />
-                  Recently done project{" "}
-                </h2>
+                <h2>Meine jüngsten Projekte</h2>
               </div>
             </div>
           </div>
-          <div className="filters portfolio-filter">
+          {/* <div className="filters portfolio-filter">
             <ul>
               <li className="active" data-filter="*">
                 all
@@ -351,35 +238,16 @@ export default function Home() {
               <li data-filter=".following">following</li>
               <li data-filter=".upcoming">upcoming</li>
             </ul>
-          </div>
+          </div> */}
 
           <div className="filters-content">
             <div className="row portfolio-grid justify-content-center">
-              <div className="col-lg-4 col-md-6 all latest">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="img/portfolio/p1.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="img/portfolio/p1.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="short_info">
-                    <h4>
-                      <a href="portfolio-details.html">minimal design</a>
-                    </h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
               <div className="col-lg-4 col-md-6 all popular">
                 <div className="portfolio_box">
                   <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="img/portfolio/p2.jpg" alt="" />
+                    <img className="img-fluid w-100" src="img/portfolio/p2.png" alt="" />
                     <div className="overlay"></div>
-                    <a href="img/portfolio/p2.jpg" className="img-gal">
+                    <a href="img/portfolio/p2.png" className="img-gal">
                       <div className="icon">
                         <span className="lnr lnr-cross"></span>
                       </div>
@@ -387,18 +255,19 @@ export default function Home() {
                   </div>
                   <div className="short_info">
                     <h4>
-                      <a href="portfolio-details.html">Paint wall</a>
+                      <a href="portfolio-details.html">Cyberbelt</a>
                     </h4>
-                    <p>Animated, portfolio</p>
+                    <p>React, Tailwind</p>
                   </div>
                 </div>
               </div>
+
               <div className="col-lg-4 col-md-6 all latest">
                 <div className="portfolio_box">
                   <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="img/portfolio/p3.jpg" alt="" />
+                    <img className="img-fluid w-100" src="img/portfolio/p1.png" alt="" />
                     <div className="overlay"></div>
-                    <a href="img/portfolio/p3.jpg" className="img-gal">
+                    <a href="img/portfolio/p1.png" className="img-gal">
                       <div className="icon">
                         <span className="lnr lnr-cross"></span>
                       </div>
@@ -406,9 +275,29 @@ export default function Home() {
                   </div>
                   <div className="short_info">
                     <h4>
-                      <a href="portfolio-details.html">female light</a>
+                      <a href="portfolio-details.html">Studio Of Arts</a>
                     </h4>
-                    <p>Animated, portfolio</p>
+                    <p>Flutter, iOS & Android</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-4 col-md-6 all latest">
+                <div className="portfolio_box">
+                  <div className="single_portfolio">
+                    <img className="img-fluid w-100" src="img/portfolio/p3.png" alt="" />
+                    <div className="overlay"></div>
+                    <a href="img/portfolio/p3.png" className="img-gal">
+                      <div className="icon">
+                        <span className="lnr lnr-cross"></span>
+                      </div>
+                    </a>
+                  </div>
+                  <div className="short_info">
+                    <h4>
+                      <a href="portfolio-details.html">aiEndoscopic</a>
+                    </h4>
+                    <p>React, NextJS, Tailwind </p>
                   </div>
                 </div>
               </div>
@@ -529,7 +418,6 @@ export default function Home() {
         </div>
       </section>
       {/* <!--================End Portfolio Area =================--> */}
-
       {/* <!--================ Start Testimonial Area =================--> */}
       <div className="testimonial_area section_gap_bottom">
         <div className="container">
@@ -647,104 +535,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <!--================ End Testimonial Area =================--> */}
-
-      {/* <!--================ Start Newsletter Area =================--> */}
-      <section className="newsletter_area">
-        <div className="container">
-          <div className="row justify-content-center align-items-center">
-            <div className="col-lg-12">
-              <div className="subscription_box text-center">
-                <h2 className="text-uppercase text-white">get update from anywhere</h2>
-                <p className="text-white">
-                  Bearing Void gathering light light his eavening unto dont afraid.
-                </p>
-                <div className="subcribe-form" id="mc_embed_signup">
-                  <form
-                    target="_blank"
-                    noValidate
-                    action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
-                    method="get"
-                    className="subscription relative"
-                  >
-                    <input name="EMAIL" placeholder="Email address" required type="email" />
-                    <div style={{ position: "absolute", left: "-5000px" }}>
-                      <input
-                        name="b_36c4fd991d266f23781ded980_aefe40901a"
-                        tabIndex={-1}
-                        value=""
-                        type="text"
-                      />
-                    </div>
-                    <button className="primary-btn hover d-inline">Get Started</button>
-                    <div className="info"></div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <!--================ End Newsletter Area =================--> */}
-
-      {/* <!--================Footer Area =================--> */}
-      <footer className="footer_area">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-12">
-              <div className="footer_top flex-column">
-                <div className="footer_logo">
-                  <a href="#">
-                    <img src="img/logo.png" alt="" />
-                  </a>
-                  <h4>Follow Me</h4>
-                </div>
-                <div className="footer_social">
-                  <a href="#">
-                    <i className="fa fa-facebook"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fa fa-twitter"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fa fa-dribbble"></i>
-                  </a>
-                  <a href="#">
-                    <i className="fa fa-behance"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="row footer_bottom justify-content-center">
-            <p className="col-lg-8 col-sm-12 footer-text" />
-            {/* <!-- Link back to Colorlib can&apos;t be removed. Template is licensed under CC BY 3.0. --> */}
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights
-            reserved | This template is made with{" "}
-            <i className="fa fa-heart-o" aria-hidden="true"></i> by{" "}
-            <a href="https://colorlib.com" target="_blank">
-              Colorlib
-            </a>
-            {/* <!-- Link back to Colorlib can&apos;t be removed. Template is licensed under CC BY 3.0. --></p> */}
-          </div>
-        </div>
-      </footer>
-      {/* <!--================End Footer Area =================--> */}
-      <Script src="js/jquery-3.2.1.min.js"></Script>
-      <Script src="js/popper.js"></Script>
-      <Script src="js/bootstrap.min.js"></Script>
-      <Script src="js/stellar.js"></Script>
-      <Script src="js/jquery.magnific-popup.min.js"></Script>
-      <Script src="vendors/nice-select/js/jquery.nice-select.min.js"></Script>
-      <Script src="vendors/isotope/imagesloaded.pkgd.min.js"></Script>
-      <Script src="vendors/isotope/isotope-min.js"></Script>
-      <Script src="vendors/owl-carousel/owl.carousel.min.js"></Script>
-      <Script src="js/jquery.ajaxchimp.min.js"></Script>
-      <Script src="js/mail-Script.js"></Script>
-      {/* <!--gmaps Js--> */}
-      <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></Script>
-      <Script src="js/gmaps.min.js"></Script>
-      <Script src="js/theme.js"></Script>
+      {/* <!--================ End Testimonial Area =================--> */}z
     </>
   );
 }

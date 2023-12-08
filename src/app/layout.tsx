@@ -2,6 +2,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +22,214 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <link rel="stylesheet" href="css/magnific-popup.css" />
       <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
       <link rel="stylesheet" href="css/style.css"></link>
-      <body className={inter.className}>{children}</body>
+
+      <body className={inter.className}>
+        {/* <!--================ Start Header Area =================--> */}
+        <header className="header_area">
+          <div className="main_menu">
+            <nav className="navbar navbar-expand-lg navbar-light">
+              <div className="container">
+                {/* <!-- Brand and toggle get grouped for better mobile display --> */}
+                <a className="navbar-brand logo_h" href="index.html">
+                  <img src="img/logo.png" alt="" />
+                </a>
+                <button
+                  className="navbar-toggler"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                </button>
+                {/* <!-- Collect the nav links, forms, and other content for toggling --> */}
+                <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
+                  <ul className="nav navbar-nav menu_nav justify-content-end">
+                    <li className="nav-item active">
+                      <a className="nav-link" href="index.html">
+                        Home
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="about.html">
+                        About
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="services.html">
+                        Services
+                      </a>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="portfolio.html">
+                        Portfolio
+                      </a>
+                    </li>
+                    <li className="nav-item submenu dropdown">
+                      <a
+                        href="#"
+                        className="nav-link dropdown-toggle"
+                        data-toggle="dropdown"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Pages
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <a className="nav-link" href="elements.html">
+                            Elements
+                          </a>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link" href="portfolio-details.html">
+                            Portfolio Details
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="nav-item submenu dropdown">
+                      <a
+                        href="#"
+                        className="nav-link dropdown-toggle"
+                        data-toggle="dropdown"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                      >
+                        Blog
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <a className="nav-link" href="blog.html">
+                            Blog
+                          </a>
+                        </li>
+                        <li className="nav-item">
+                          <a className="nav-link" href="single-blog.html">
+                            Blog Details
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li className="nav-item">
+                      <a className="nav-link" href="contact.html">
+                        Contact
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+        {/* <!--================ End Header Area =================--> */}
+
+        {children}
+
+        {/* <!--================ Start Newsletter Area =================--> */}
+        <section className="newsletter_area">
+          <div className="container">
+            <div className="row justify-content-center align-items-center">
+              <div className="col-lg-12">
+                <div className="subscription_box text-center">
+                  <h2 className="text-uppercase text-white">get update from anywhere</h2>
+                  <p className="text-white">
+                    Bearing Void gathering light light his eavening unto dont afraid.
+                  </p>
+                  <div className="subcribe-form" id="mc_embed_signup">
+                    <form
+                      target="_blank"
+                      noValidate
+                      action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                      method="get"
+                      className="subscription relative"
+                    >
+                      <input name="EMAIL" placeholder="Email address" required type="email" />
+                      <div style={{ position: "absolute", left: "-5000px" }}>
+                        <input
+                          name="b_36c4fd991d266f23781ded980_aefe40901a"
+                          tabIndex={-1}
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                      <button className="primary-btn hover d-inline">Get Started</button>
+                      <div className="info"></div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* <!--================ End Newsletter Area =================--> */}
+
+        {/* <!--================Footer Area =================--> */}
+        <footer className="footer_area">
+          <div className="container">
+            <div className="row justify-content-center">
+              <div className="col-lg-12">
+                <div className="footer_top flex-column">
+                  <div className="footer_logo">
+                    <a href="#">
+                      <img src="img/logo.png" alt="" />
+                    </a>
+                    <h4>Follow Me</h4>
+                  </div>
+                  <div className="footer_social">
+                    <a href="#">
+                      <i className="fa fa-facebook"></i>
+                    </a>
+                    <a href="#">
+                      <i className="fa fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i className="fa fa-dribbble"></i>
+                    </a>
+                    <a href="#">
+                      <i className="fa fa-behance"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="row footer_bottom justify-content-center">
+              <p className="col-lg-8 col-sm-12 footer-text" />
+              {/* <!-- Link back to Colorlib can&apos;t be removed. Template is licensed under CC BY 3.0. --> */}
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights
+              reserved | This template is made with{" "}
+              <i className="fa fa-heart-o" aria-hidden="true"></i> by{" "}
+              <a href="https://colorlib.com" target="_blank">
+                Colorlib
+              </a>
+              {/* <!-- Link back to Colorlib can&apos;t be removed. Template is licensed under CC BY 3.0. --></p> */}
+            </div>
+          </div>
+        </footer>
+        {/* <!--================End Footer Area =================--> */}
+
+        <Script src="js/jquery-3.2.1.min.js"></Script>
+        <Script src="js/popper.js"></Script>
+        <Script src="js/bootstrap.min.js"></Script>
+        <Script src="js/stellar.js"></Script>
+        <Script src="js/jquery.magnific-popup.min.js"></Script>
+        <Script src="vendors/nice-select/js/jquery.nice-select.min.js"></Script>
+        <Script src="vendors/isotope/imagesloaded.pkgd.min.js"></Script>
+        <Script src="vendors/isotope/isotope-min.js"></Script>
+        <Script src="vendors/owl-carousel/owl.carousel.min.js"></Script>
+        <Script src="js/jquery.ajaxchimp.min.js"></Script>
+        <Script src="js/mail-Script.js"></Script>
+        {/* <!--gmaps Js--> */}
+        <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></Script>
+        <Script src="js/gmaps.min.js"></Script>
+        <Script src="js/theme.js"></Script>
+      </body>
     </html>
   );
 }
