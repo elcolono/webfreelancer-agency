@@ -304,9 +304,9 @@ export default function Home() {
               <div className="col-lg-4 col-md-6 all popular">
                 <div className="portfolio_box">
                   <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="img/portfolio/p4.jpg" alt="" />
+                    <img className="img-fluid w-100" src="img/portfolio/p4.png" alt="" />
                     <div className="overlay"></div>
-                    <a href="img/portfolio/p4.jpg" className="img-gal">
+                    <a href="img/portfolio/p4.png" className="img-gal">
                       <div className="icon">
                         <span className="lnr lnr-cross"></span>
                       </div>
@@ -314,18 +314,18 @@ export default function Home() {
                   </div>
                   <div className="short_info">
                     <h4>
-                      <a href="portfolio-details.html">fourth air</a>
+                      <a href="portfolio-details.html">Bookingdoc</a>
                     </h4>
-                    <p>Animated, portfolio</p>
+                    <p>ASP.NET Core, JavaScript, Bootstrap</p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 all following">
                 <div className="portfolio_box">
                   <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="img/portfolio/p6.jpg" alt="" />
+                    <img className="img-fluid w-100" src="img/portfolio/p6.png" alt="" />
                     <div className="overlay"></div>
-                    <a href="img/portfolio/p5.jpg" className="img-gal">
+                    <a href="img/portfolio/p6.png" className="img-gal">
                       <div className="icon">
                         <span className="lnr lnr-cross"></span>
                       </div>
@@ -333,9 +333,9 @@ export default function Home() {
                   </div>
                   <div className="short_info">
                     <h4>
-                      <a href="portfolio-details.html">together sign</a>
+                      <a href="portfolio-details.html">om MATapp</a>
                     </h4>
-                    <p>Animated, portfolio</p>
+                    <p>Flutter, iOS & Android</p>
                   </div>
                 </div>
               </div>
@@ -344,7 +344,7 @@ export default function Home() {
                   <div className="single_portfolio">
                     <img className="img-fluid w-100" src="img/portfolio/p5.jpg" alt="" />
                     <div className="overlay"></div>
-                    <a href="img/portfolio/p6.jpg" className="img-gal">
+                    <a href="img/portfolio/p5.jpg" className="img-gal">
                       <div className="icon">
                         <span className="lnr lnr-cross"></span>
                       </div>
