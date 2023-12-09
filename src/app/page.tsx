@@ -304,9 +304,9 @@ export default function Home() {
               <div className="col-lg-4 col-md-6 all popular">
                 <div className="portfolio_box">
                   <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="img/portfolio/p4.png" alt="" />
+                    <img className="img-fluid w-100" src="img/portfolio/p6.png" alt="" />
                     <div className="overlay"></div>
-                    <a href="img/portfolio/p4.png" className="img-gal">
+                    <a href="img/portfolio/p6.png" className="img-gal">
                       <div className="icon">
                         <span className="lnr lnr-cross"></span>
                       </div>
@@ -323,9 +323,9 @@ export default function Home() {
               <div className="col-lg-4 col-md-6 all following">
                 <div className="portfolio_box">
                   <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="img/portfolio/p6.png" alt="" />
+                    <img className="img-fluid w-100" src="img/portfolio/p4.png" alt="" />
                     <div className="overlay"></div>
-                    <a href="img/portfolio/p6.png" className="img-gal">
+                    <a href="img/portfolio/p4.png" className="img-gal">
                       <div className="icon">
                         <span className="lnr lnr-cross"></span>
                       </div>
@@ -342,9 +342,9 @@ export default function Home() {
               <div className="col-lg-4 col-md-6 all upcoming">
                 <div className="portfolio_box">
                   <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="img/portfolio/p5.jpg" alt="" />
+                    <img className="img-fluid w-100" src="img/portfolio/p5.png" alt="" />
                     <div className="overlay"></div>
-                    <a href="img/portfolio/p5.jpg" className="img-gal">
+                    <a href="img/portfolio/p5.png " className="img-gal">
                       <div className="icon">
                         <span className="lnr lnr-cross"></span>
                       </div>
@@ -352,64 +352,9 @@ export default function Home() {
                   </div>
                   <div className="short_info">
                     <h4>
-                      <a href="portfolio-details.html">multiply fowl</a>
+                      <a href="portfolio-details.html">Enlivio</a>
                     </h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 all upcoming following">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="img/portfolio/p7.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="img/portfolio/p7.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="short_info">
-                    <h4>
-                      <a href="portfolio-details.html">green heaven</a>
-                    </h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 all following">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="img/portfolio/p8.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="img/portfolio/p8.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="short_info">
-                    <h4>fly male</h4>
-                    <p>Animated, portfolio</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4 col-md-6 all upcoming">
-                <div className="portfolio_box">
-                  <div className="single_portfolio">
-                    <img className="img-fluid w-100" src="img/portfolio/p9.jpg" alt="" />
-                    <div className="overlay"></div>
-                    <a href="img/portfolio/p9.jpg" className="img-gal">
-                      <div className="icon">
-                        <span className="lnr lnr-cross"></span>
-                      </div>
-                    </a>
-                  </div>
-                  <div className="short_info">
-                    <h4>
-                      <a href="portfolio-details.html">season face</a>
-                    </h4>
-                    <p>Animated, portfolio</p>
+                    <p>Flutter, iOS & Android, NodeJS</p>
                   </div>
                 </div>
               </div>
