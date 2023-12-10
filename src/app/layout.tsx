@@ -31,7 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div className="container">
                 {/* <!-- Brand and toggle get grouped for better mobile display --> */}
                 <a className="navbar-brand logo_h" href="index.html">
-                  <img src="img/logo.png" alt="" />
+                  <img src="img/logo-webfreelancer.png" alt="" />
                 </a>
                 <button
                   className="navbar-toggler"
@@ -178,7 +178,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <div className="footer_top flex-column">
                   <div className="footer_logo">
                     <a href="#">
-                      <img src="img/logo.png" alt="" />
+                      <img src="img/logo-webfreelancer.png" alt="" />
                     </a>
                     <h4>Follow Me</h4>
                   </div>
