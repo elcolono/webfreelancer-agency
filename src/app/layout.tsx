@@ -215,7 +215,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* <!--================End Footer Area =================--> */}
 
         <Script src="js/jquery-3.2.1.min.js"></Script>
-        <Script src="js/popper.js"></Script>
+        {/* <Script src="js/popper.js"></Script> */}
         <Script src="js/bootstrap.min.js"></Script>
         <Script src="js/stellar.js"></Script>
         <Script src="js/jquery.magnific-popup.min.js"></Script>
@@ -224,10 +224,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script src="vendors/isotope/isotope-min.js"></Script>
         <Script src="vendors/owl-carousel/owl.carousel.min.js"></Script>
         <Script src="js/jquery.ajaxchimp.min.js"></Script>
-        <Script src="js/mail-Script.js"></Script>
+        {/* <Script src="js/mail-Script.js"></Script> */}
         {/* <!--gmaps Js--> */}
-        <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></Script>
-        <Script src="js/gmaps.min.js"></Script>
+        {/* <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></Script> */}
+        {/* <Script src="js/gmaps.min.js"></Script> */}
         <Script src="js/theme.js"></Script>
       </body>
     </html>
