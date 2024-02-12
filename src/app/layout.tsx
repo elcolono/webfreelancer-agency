@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import Script from "next/script";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,9 +31,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav className="navbar navbar-expand-lg navbar-light">
               <div className="container">
                 {/* <!-- Brand and toggle get grouped for better mobile display --> */}
-                <a className="navbar-brand logo_h" href="index.html">
+                <Link className="navbar-brand logo_h" href="/">
                   <img src="img/logo-webfreelancer.png" alt="" />
-                </a>
+                </Link>
                 <button
                   className="navbar-toggler"
                   type="button"
@@ -49,7 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 {/* <!-- Collect the nav links, forms, and other content for toggling --> */}
                 <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
                   <ul className="nav navbar-nav menu_nav justify-content-end">
-                    <li className="nav-item active">
+                    {/* <li className="nav-item active">
                       <a className="nav-link" href="index.html">
                         Home
                       </a>
@@ -116,11 +117,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                           </a>
                         </li>
                       </ul>
-                    </li>
+                    </li> */}
                     <li className="nav-item">
-                      <a className="nav-link" href="contact.html">
-                        Contact
-                      </a>
+                      <Link className="nav-link" href="/contact">
+                        Kontakt
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -226,8 +227,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Script src="js/jquery.ajaxchimp.min.js"></Script>
         {/* <Script src="js/mail-Script.js"></Script> */}
         {/* <!--gmaps Js--> */}
-        {/* <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></Script> */}
-        {/* <Script src="js/gmaps.min.js"></Script> */}
+        {/* <Script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></Script>
+        <Script src="js/gmaps.min.js"></Script> */}
         <Script src="js/theme.js"></Script>
       </body>
     </html>

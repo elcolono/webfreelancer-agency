@@ -1,6 +1,7 @@
 import Script from "next/script";
 import styles from "./page.module.css";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -16,11 +17,11 @@ export default function Home() {
                   <h1 className="text-uppercase">Ich bin anderas</h1>
                   <h5 className="text-uppercase">web developer</h5>
                   <div className="d-flex align-items-center">
-                    <a className="primary_btn" href="#">
-                      <span>Hire Me</span>
-                    </a>
+                    <Link className="primary_btn" href="/contact">
+                      <span>Kontakt</span>
+                    </Link>
                     <a className="primary_btn tr-bg" href="#">
-                      <span>Get CV</span>
+                      <span>CV Download</span>
                     </a>
                   </div>
                 </div>
@@ -369,7 +370,7 @@ export default function Home() {
           <div className="row justify-content-center">
             <div className="col-lg-8 text-center">
               <div className="main_title">
-                <h2>client say about me</h2>
+                <h2>Das sagen die Kunden</h2>
                 <p>
                   Is give may shall likeness made yielding spirit a itself togeth created after sea
                   is in beast <br />

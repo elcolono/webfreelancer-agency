@@ -1,9 +1,9 @@
 "use client";
 
 import { yupResolver } from "@hookform/resolvers/yup";
+import clsx from "clsx";
 import { useRouter } from "next/navigation";
-import Script from "next/script";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { object, string } from "yup";
 
@@ -19,8 +19,8 @@ export default function ContactPage() {
 
   const router = useRouter();
   const validationSchema = object().shape({
-    name: string().required("Required"),
-    email: string().email("Invalid email address").required("Required"),
+    name: string().required("Bitte Name eingeben."),
+    email: string().required("Bitte Email Adresse eingeben."),
     subject: string(),
     message: string(),
   });
@@ -58,111 +58,102 @@ export default function ContactPage() {
   };
 
   return (
-    <>
-      {/* <!--================Contact Area =================--> */}
-      <section className="contact_area section_gap">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3">
-              <div className="contact_info">
-                <div className="info_item">
-                  <i className="lnr lnr-home"></i>
-                  <h6>California, United States</h6>
-                  <p>Santa monica bullevard</p>
-                </div>
-                <div className="info_item">
-                  <i className="lnr lnr-phone-handset"></i>
-                  <h6>
-                    <a href="#">00 (440) 9865 562</a>
-                  </h6>
-                  <p>Mon to Fri 9am to 6 pm</p>
-                </div>
-                <div className="info_item">
-                  <i className="lnr lnr-envelope"></i>
-                  <h6>
-                    <a href="#">support@colorlib.com</a>
-                  </h6>
-                  <p>Send us your query anytime!</p>
-                </div>
+    <section className="contact_area section_gap">
+      <div className="container">
+        <div className="row">
+          <div className="col-lg-3">
+            <div className="contact_info">
+              <div className="info_item">
+                <i className="lnr lnr-home"></i>
+                <h6>Regus - Vienna, Messecarree</h6>
+                <p>Ausstellungsstraße 50/C /2 OG, 1020 Wien</p>
+              </div>
+              <div className="info_item">
+                <i className="lnr lnr-phone-handset"></i>
+                <h6>
+                  <a href="#">(+43) 676 945 75 66</a>
+                </h6>
+                <p>Mo. bis Fr. 9am to 6 pm</p>
+              </div>
+              <div className="info_item">
+                <i className="lnr lnr-envelope"></i>
+                <h6>
+                  <a href="#">andreas.siedler@gmail.com</a>
+                </h6>
+                <p>Senden Sie mir jederzeit eine Anfrage!</p>
               </div>
             </div>
-            <div className="col-lg-9">
-              <form
-                className="row contact_form"
-                action="contact_process.php"
-                method="post"
-                id="contactForm"
-                noValidate
-                onSubmit={handleSubmit(onSubmit)}
-              >
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <input
-                      {...register("name")}
-                      type="text"
-                      className="form-control"
-                      id="name"
-                      name="name"
-                      placeholder="Enter your name"
-                      {...register}
-                    />
-                    <div className="invalid-feedback">Please choose a username.</div>
-                  </div>
-                  <div className="form-group">
-                    <input
-                      {...register("email")}
-                      type="email"
-                      className="form-control"
-                      id="email"
-                      name="email"
-                      placeholder="Enter email address"
-                      {...register}
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      {...register("subject")}
-                      type="text"
-                      className="form-control"
-                      id="subject"
-                      name="subject"
-                      placeholder="Enter Subject"
-                    />
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="form-group">
-                    <textarea
-                      {...register("message")}
-                      className="form-control"
-                      name="message"
-                      id="message"
-                      rows={1}
-                      placeholder="Enter Message"
-                    ></textarea>
-                  </div>
-                </div>
-                <div className="col-md-12 text-right">
-                  <button type="submit" value="submit" className="primary_btn">
-                    <span>Send Message</span>
-                  </button>
-                </div>
-              </form>
-            </div>
           </div>
-          <div
-            id="mapBox"
-            className="mapBox"
-            data-lat="40.701083"
-            data-lon="-74.1522848"
-            data-zoom="13"
-            data-info="PO Box CT16122 Collins Street West, Victoria 8007, Australia."
-            data-mlat="40.701083"
-            data-mlon="-74.1522848"
-          ></div>
+          <div className="col-lg-9">
+            <form
+              className="row contact_form"
+              id="contactForm"
+              noValidate
+              onSubmit={handleSubmit(onSubmit)}
+            >
+              <div className="col-md-6">
+                <div className="form-group">
+                  <input
+                    {...register("name")}
+                    type="text"
+                    className={clsx("form-control", errors.name && "is-invalid")}
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    {...register}
+                  />
+                  {errors.name && <div className="invalid-feedback">{errors.name.message}</div>}
+                </div>
+                <div className="form-group">
+                  <input
+                    {...register("email")}
+                    type="email"
+                    className={clsx("form-control", errors.email && "is-invalid")}
+                    id="email"
+                    name="email"
+                    placeholder="Email Adresse"
+                    {...register}
+                  />
+                  {errors.email && <div className="invalid-feedback">{errors.email.message}</div>}
+                </div>
+                <div className="form-group">
+                  <input
+                    {...register("subject")}
+                    type="text"
+                    className={clsx("form-control", errors.subject && "is-invalid")}
+                    id="subject"
+                    name="subject"
+                    placeholder="Betreff"
+                  />
+                  {errors.subject && (
+                    <div className="invalid-feedback">{errors.subject.message}</div>
+                  )}
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="form-group">
+                  <textarea
+                    {...register("message")}
+                    className={clsx("form-control", errors.message && "is-invalid")}
+                    name="message"
+                    id="message"
+                    rows={1}
+                    placeholder="Nachricht"
+                  ></textarea>
+                  {errors.message && (
+                    <div className="invalid-feedback">{errors.message.message}</div>
+                  )}
+                </div>
+              </div>
+              <div className="col-md-12 text-right">
+                <button type="submit" value="submit" className="primary_btn">
+                  <span>Nachricht senden</span>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-      </section>
-      {/* <!--================Contact Area =================--> */}
-    </>
+      </div>
+    </section>
   );
 }
